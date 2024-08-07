@@ -28,6 +28,21 @@ export default function Sidebar() {
         return `/${url}` === currentPath;
     };
 
+    // const highlightActiveMenuItems = (menuItems: MenuItem[]): MenuItem[] => {
+    //     return menuItems.map(item => {
+    //         if (item.items) {
+    //             return {
+    //                 ...item,
+    //                 items: highlightActiveMenuItems(item.items.flat())
+    //             };
+    //         }
+    //         return {
+    //             ...item,
+    //             className: item.url && isActive(item.url) ? "border-b-2 border-orange-1 !text-orange-1 " : undefined
+    //         };
+    //     });
+    // };
+
     const highlightActiveMenuItems = (menuItems: MenuItem[]): MenuItem[] => {
         return menuItems.map(item => {
             if (item.items) {
@@ -38,11 +53,17 @@ export default function Sidebar() {
             }
             return {
                 ...item,
-                className: item.url && isActive(item.url) ? "border-b-2 border-orange-1 !text-orange-1 " : undefined
+                template: (item: MenuItem) => (
+                    <a href={item.url} className={`pb-3 flex gap-1 items-center hover:bg-white hover:text-orange-1 
+                    ${isActive(item.url) ? 'text-orange-1 ' : ''}`}>
+                        {item.icon && <i className={item.icon}></i>}
+                        {item.label}
+                    </a>
+                    
+                )
             };
         });
     };
-
     const highlightedItems = highlightActiveMenuItems(items);
 
     return (

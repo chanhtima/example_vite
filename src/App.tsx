@@ -6,6 +6,7 @@ import Form from "./pages/Form";
 import Editor from "./pages/Editor";
 import Table from "./pages/Table";
 import Upload from "./pages/Upload";
+import Galleria from "./pages/Galleria";
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
              <Route path="/editor" element={<Editor/>} />
              <Route path="/table" element={<Table/>} />
              <Route path="/upload" element={<Upload/>} />
+             <Route path="/galleria" element={<Galleria/>} />
              <Route path="*" element={<Navigate to="/" />} />
           </Route>
        </Routes>

@@ -8,7 +8,7 @@ function UserLayout() {
             <Navbar />
             <div className="globals-layout">
                 <div className="flex ">
-                    <div className="hidden md:block border-e pr-6">
+                    <div className="hidden md:block border-e">
                         <Sidebar />
                     </div>
                     {/* <Sidebar2 /> */}

@@ -7,3 +7,11 @@ export interface UploadFileProps {
     maxSize?: number;
   }
   
+
+
+ export interface dataProps {
+  itemImageSrc: string;
+  thumbnailImageSrc: string;
+  alt: string;
+  title: string;
+}

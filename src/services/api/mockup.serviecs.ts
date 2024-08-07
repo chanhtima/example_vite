@@ -52,3 +52,7 @@ export const generateMockData = (): Paginate<Product> => {
         page_information: pageInformation
     };
 };
+
+
+
+

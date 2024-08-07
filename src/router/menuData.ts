@@ -7,7 +7,7 @@ export const items: MenuItem[] = [
   },
   {
     label: "Upload",
-    icon: "pi pi-fw pi-video",
+    icon: "pi pi-fw pi-cloud-upload",
     url: "upload",
   },
   {
@@ -22,7 +22,7 @@ export const items: MenuItem[] = [
   },
   {
     label: "Chart",
-    icon: "pi pi-fw pi-video",
+    icon: "pi pi-fw pi-chart-scatter",
     url: "chart",
   },
   {
@@ -31,32 +31,37 @@ export const items: MenuItem[] = [
     url: "table",
   },
   {
-    label: "Settings",
-    icon: "pi pi-fw pi-cog",
-    items: [
-      [
-        {
-          label: "Setting 1",
-          items: [
-            { label: "Setting 1.1", url: "/Setting 1.1" },
-            { label: "Setting 1.2", url: "/Setting 1.1" },
-          ],
-        },
-        {
-          label: "Setting 2",
-          items: [{ label: "Setting 2.1" }, { label: "Setting 2.2" }],
-        },
-        {
-          label: "Setting 3",
-          items: [{ label: "Setting 3.1" }, { label: "Setting 3.2" }],
-        },
-      ],
-      [
-        {
-          label: "Technology 4",
-          items: [{ label: "Setting 4.1" }, { label: "Setting 4.2" }],
-        },
-      ],
-    ],
+    label: "Galleria",
+    icon: "pi pi-fw pi-images",
+    url: "galleria",
   },
+  // {
+  //   label: "Settings",
+  //   icon: "pi pi-fw pi-cog",
+  //   items: [
+  //     [
+  //       {
+  //         label: "Setting 1",
+  //         items: [
+  //           { label: "Setting 1.1", url: "/Setting 1.1" },
+  //           { label: "Setting 1.2", url: "/Setting 1.1" },
+  //         ],
+  //       },
+  //       {
+  //         label: "Setting 2",
+  //         items: [{ label: "Setting 2.1" }, { label: "Setting 2.2" }],
+  //       },
+  //       {
+  //         label: "Setting 3",
+  //         items: [{ label: "Setting 3.1" }, { label: "Setting 3.2" }],
+  //       },
+  //     ],
+  //     [
+  //       {
+  //         label: "Technology 4",
+  //         items: [{ label: "Setting 4.1" }, { label: "Setting 4.2" }],
+  //       },
+  //     ],
+  //   ],
+  // },
 ];

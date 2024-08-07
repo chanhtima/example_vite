@@ -1,6 +1,6 @@
 import Logo from "../assets/A-Star-Logo.png";
 import { Image } from 'primereact/image';
-import TopMenu from "./TopMenu";
+
 
 export default function Navbar() {
     return (
@@ -12,7 +12,7 @@ export default function Navbar() {
                     <div className="">example</div>
                 </a>
                 <div className="flex items-center max-lg:flex-row-reverse gap-2">
-                    <TopMenu/>
+                    {/* <TopMenu/> */}
                     <div className="flex items-center gap-2">
                         <div className="max-sm:hidden">Admin@gmail.com</div>
                         <Image src={Logo} alt="A-Star Logo" width="40" height="40" />
