@@ -8,10 +8,6 @@
       "path": "./tsconfig.node.json"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+
+  
 }
