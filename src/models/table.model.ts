@@ -1,15 +1,15 @@
 import { ColumnBodyOptions } from 'primereact/column';
-
+type FieldType<T> = T extends { [key: string]: any } ? keyof T | 'action' : never;
 export interface tableprops {
    data:any
 }
 
-export interface ColumnMeta<RecordType = unknown> {
-    field: string;
+export interface ColumnMeta<T = unknown> {
+    field: FieldType<T>; 
     header: string;
     sortable?: boolean;
     className?: string;
-    render?: (data: any, options: ColumnBodyOptions) => React.ReactNode;
+    render?: (data: T, options: ColumnBodyOptions) => React.ReactNode;
 }
 
  export interface PaginatorProps {
