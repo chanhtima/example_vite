@@ -1,7 +1,14 @@
+import { Steps } from "primereact/steps";
 
 function Home() {
+  const items = [
+    { label: 'Personal' },
+    { label: 'Seat' },
+    { label: 'Payment' },
+    { label: 'Confirmation' }
+  ];
   return (
-    <div>Home</div>
+    <Steps model={items} />
   )
 }
 

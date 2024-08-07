@@ -4,7 +4,7 @@ export interface tableprops {
    data:any
 }
 
-export interface ColumnMeta {
+export interface ColumnMeta<RecordType = unknown> {
     field: string;
     header: string;
     sortable?: boolean;
