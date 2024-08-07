@@ -54,7 +54,7 @@ export default function Sidebar() {
 
     return (
         <div>
-            <MegaMenu model={highlightedItems}  breakpoint="767px" />
+            <MegaMenu model={highlightedItems}  breakpoint="1280px" />
         </div>
     );
 }

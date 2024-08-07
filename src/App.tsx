@@ -3,6 +3,8 @@ import UserLayout from "./layout/UserLayout";
 import Home from "./pages/Home";
 import Chart from "./pages/Chart";
 import Form from "./pages/Form";
+import Editor from "./pages/Editor";
+import Table from "./pages/Table";
 
 
 export default function App() {
@@ -15,6 +17,8 @@ export default function App() {
              <Route index element={<Home/> } />
              <Route path="/chart" element={<Chart/>} />
              <Route path="/form" element={<Form/>} />
+             <Route path="/editor" element={<Editor/>} />
+             <Route path="/table" element={<Table/>} />
              <Route path="*" element={<Navigate to="/" />} />
           </Route>
        </Routes>
