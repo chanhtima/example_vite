@@ -2,8 +2,13 @@ import { MenuItem } from "primereact/menuitem";
 export const items: MenuItem[] = [
   {
     label: "Home",
-    icon: "pi pi-fw pi-video",
+    icon: "pi pi-fw pi-home",
     url: "/",
+  },
+  {
+    label: "Upload",
+    icon: "pi pi-fw pi-video",
+    url: "upload",
   },
   {
     label: "Form",
@@ -32,7 +37,10 @@ export const items: MenuItem[] = [
       [
         {
           label: "Setting 1",
-          items: [{ label: "Setting 1.1", url: "/Setting 1.1" }, { label: "Setting 1.2", url: "/Setting 1.1"  }],
+          items: [
+            { label: "Setting 1.1", url: "/Setting 1.1" },
+            { label: "Setting 1.2", url: "/Setting 1.1" },
+          ],
         },
         {
           label: "Setting 2",

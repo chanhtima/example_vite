@@ -5,6 +5,7 @@ import Chart from "./pages/Chart";
 import Form from "./pages/Form";
 import Editor from "./pages/Editor";
 import Table from "./pages/Table";
+import Upload from "./pages/Upload";
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
              <Route path="/form" element={<Form/>} />
              <Route path="/editor" element={<Editor/>} />
              <Route path="/table" element={<Table/>} />
+             <Route path="/upload" element={<Upload/>} />
              <Route path="*" element={<Navigate to="/" />} />
           </Route>
        </Routes>
