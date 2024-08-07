@@ -34,7 +34,7 @@ export default function InputNumber({
                     return (
                         <div>
                             <PrimeInputNumber
-                                className={`globals-input rounded-md ${fieldState.invalid ? 'p-invalid !border-red-600' : ''}`}
+                                className={` rounded-md ${fieldState.invalid ? 'p-invalid !border-red-600' : ''}`}
                                 id={name}
                                 {...field}
                                 value={value}

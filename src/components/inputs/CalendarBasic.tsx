@@ -31,7 +31,7 @@ export default function CalendarBasic({
           return (
             <div  >
               <Calendar
-                className={` globals-input ${fieldState.invalid ? 'p-invalid !border-red-600' : ''}`}
+                className={`h-11 ${fieldState.invalid ? 'p-invalid !border-red-600' : ''}`}
                 id={name}
                 {...field}
                 value={value}
