@@ -10,10 +10,16 @@ export default function FullScreen() {
 
     const fetchImages = async () => {
         try {
-            const data = await getPhotos();
-            setData(data);
+            const fetchedData = await getPhotos();
+            if (Array.isArray(fetchedData)) {
+                setData(fetchedData);
+            } else {
+                console.error('Fetched data is not an array:', fetchedData);
+                setData([]);
+            }
         } catch (error) {
             console.error('Error fetching images:', error);
+            setData([]);
         }
     };
 
