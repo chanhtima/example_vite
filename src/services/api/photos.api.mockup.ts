@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const getPhotos = async () => {
   try {
-    const response = await axios.get('/src/data/photos.mockup.json'); // Adjust the path accordingly
+    const response = await axios.get('/data/photos.mockup.json');
     return response.data;
   } catch (error) {
     console.error('Error fetching photos:', error);
