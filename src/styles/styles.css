@@ -23,6 +23,12 @@
     right: 6px;
  }
  
+ .p-megamenu .p-menuitem > .p-menuitem-content .p-menuitem-link{
+   padding-left: 0;
+   padding-right: 1rem;
+   background: #ffffff;
+   padding-top: 0;
+ }
  /* input */
  .globals-input-layout {
     @apply  flex flex-col mb-2 text-sm 

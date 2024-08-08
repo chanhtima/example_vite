@@ -9,9 +9,3 @@ export interface UploadFileProps {
   
 
 
- export interface dataProps {
-  itemImageSrc: string;
-  thumbnailImageSrc: string;
-  alt: string;
-  title: string;
-}

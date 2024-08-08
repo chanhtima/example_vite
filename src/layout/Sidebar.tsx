@@ -54,7 +54,7 @@ export default function Sidebar() {
             return {
                 ...item,
                 template: (item: MenuItem) => (
-                    <a href={item.url} className={`pb-3 flex gap-1 items-center hover:bg-white hover:text-orange-1 
+                    <a href={item.url} className={`pb-3 flex gap-2 items-center hover:bg-white hover:text-orange-1 
                     ${isActive(item.url) ? 'text-orange-1 ' : ''}`}>
                         {item.icon && <i className={item.icon}></i>}
                         {item.label}
