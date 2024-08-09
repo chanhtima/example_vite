@@ -10,3 +10,12 @@ export const getPhotos = async () => {
     throw error;
   }
 };
+export const getBarChart = async () => {
+  try {
+    const response = await axios.get('/data/chart.mockup.json');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching photos:', error);
+    throw error;
+  }
+};

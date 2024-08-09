@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import FullScreen from '../components/Galleria/FullScreen'
 import { TabPanel, TabView } from 'primereact/tabview';
 import { dataProps } from '../models/galleria.model';
-import { getPhotos } from '../services/api/photos.api.mockup';
+import { getPhotos } from '../services/api/api.mockup';
 import Thumbnail from '../components/Galleria/Thumbnail';
 
 export default function Galleria() {
@@ -37,10 +37,10 @@ export default function Galleria() {
         </TabPanel>
         <TabPanel header="Thumbnail">
           <div className=" grid ">
-            <div className="col-8">
+            <div className=" lg:col-8">
               <Thumbnail data={data} />
             </div>
-            <div className="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat expedita blanditiis temporibus nobis et recusandae nam possimus quae architecto exercitationem vitae accusantium esse quam accusamus aliquam porro, officiis molestiae asperiores?</div>
+            <div className="lg:col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat expedita blanditiis temporibus nobis et recusandae nam possimus quae architecto exercitationem vitae accusantium esse quam accusamus aliquam porro, officiis molestiae asperiores?</div>
           </div>
         </TabPanel>
 

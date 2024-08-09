@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Analysis",
+    "dates": [
+      "2024-02-05",
+      "2024-06-05"
+    ],
+    "fillColor": "#008FFB",
+    "status": "Active"
+  },
+  {
+    "name": "Research",
+    "dates": [
+      "2024-02-05",
+      "2024-07-15"
+    ],
+    "fillColor": "#FF5733",
+    "status": "Inactive"
+  },
+  {
+    "name": "Development",
+    "dates": [
+      "2024-07-05",
+      "2024-08-25"
+    ],
+    "fillColor": "#28A745",
+    "status": "Active"
+  },
+  {
+    "name": "Testing",
+    "dates": [
+      "2024-02-05",
+      "2024-05-05"
+    ],
+    "fillColor": "#FFC107",
+    "status": "Inactive"
+  },
+  {
+    "name": "Deployment",
+    "dates": [
+      "2024-01-05",
+      "2025-01-05"
+    ],
+    "fillColor": "#17A2B8",
+    "status": "Active"
+  },
+  {
+    "name": "Maintenance",
+    "dates": [
+      "2024-02-05",
+      "2024-07-05"
+    ],
+    "fillColor": "#6C757D",
+    "status": "Inactive"
+  },
+  {
+    "name": "Support",
+    "dates": [
+      "2024-01-01",
+      "2024-04-05"
+    ],
+    "fillColor": "#F39C12",
+    "status": "Active"
+  }
+ 
+
+
+]
