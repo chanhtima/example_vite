@@ -8,6 +8,7 @@ import DropdownInput from '../components/inputs/DropdownInput';
 import CalendarBasic from '../components/inputs/CalendarBasic';
 import InputNumber from '../components/inputs/InputNumber';
 import InputOtps from '../components/inputs/InputOtpProps';
+import { ensureHttp } from '../utils/ensureHttp';
 
 
 
@@ -57,10 +58,19 @@ function Form() {
             </ul>
         </React.Fragment>
     );
+    
 
+
+    
+
+    
     const onSubmit = (data: FormValues) => {
         console.log(data);
         reset(defaultValues);
+        const formattedUrl = ensureHttp(data.name);
+        console.log("Original URL:", data.name);
+        console.log("Formatted URL:", formattedUrl);
+
     };
 
     return (
@@ -72,7 +82,7 @@ function Form() {
                             name="name"
                             label="Name"
                             type="text"
-                            rules={{ required: "Name is required." }}
+                            // rules={{ required: "Name is required." }}
 
                         />
                     </div>
@@ -108,7 +118,7 @@ function Form() {
                             type="tel"
                             placeholder="06-12345678"
                             mask='99-99999999' // การจัดวางรูปแบบ เลข 9 หมายถึง พิมพืได้ 0-9 
-                            rules={{ required: "Tel is required." }}
+                            // rules={{ required: "Tel is required." }}
                         />
                     </div>
                     <div className=" col-span-1">
@@ -116,13 +126,13 @@ function Form() {
                             name="email"
                             label="Email"
                             type="email"
-                            rules={{
-                                required: "Email is required.",
-                                pattern: {
-                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                                    message: "Invalid email address. E.g. example@email.com",
-                                },
-                            }}
+                            // rules={{
+                            //     required: "Email is required.",
+                            //     pattern: {
+                            //         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                            //         message: "Invalid email address. E.g. example@email.com",
+                            //     },
+                            // }}
                         />
                     </div>
                     <div className=" col-span-1">
@@ -145,7 +155,7 @@ function Form() {
                             name="otp"
                             label="Otp"
                             length={12}
-                            rules={{ required: "Tel is required." }}
+                            // rules={{ required: "Tel is required." }}
                         />
                     </div>
                     <div className=" col-span-1">

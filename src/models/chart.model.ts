@@ -9,6 +9,7 @@ export interface ChartDataItem {
 
 export interface ApexChartProps {
     data: ChartDataItem[];
+    title?:string
 }
 export  interface ApexChartState {
     series: {
@@ -19,4 +20,48 @@ export  interface ApexChartState {
         }[];
     }[];
     options: ApexOptions; 
+}
+
+
+export interface ChartBasicBarProps {
+    series: {
+        name: string;
+        data: number[];
+    }[];
+    categories: string[] | number[]; // Adjust according to your data type
+    title?:string;
+    horizontal?:boolean;
+    enabled?:boolean;
+    colors: string[] 
+    
+}
+
+export interface ChartBasicBarState {
+    options: ApexOptions;
+}
+
+
+export interface chartData{
+    series: {
+        data: number[];
+    }[];
+    options: {
+        chart: {
+            type: "bar";
+            height: number;
+        };
+        plotOptions: {
+            bar: {
+                borderRadius: number;
+                borderRadiusApplication: string;
+                horizontal: boolean;
+            };
+        };
+        dataLabels: {
+            enabled: boolean;
+        };
+        xaxis: {
+        
+        };
+    };
 }

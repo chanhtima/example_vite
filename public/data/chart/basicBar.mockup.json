@@ -1,0 +1,15 @@
+{
+    "series": [
+      {
+        "name": "กำลังดำเนินการ",
+        "data": [44, 55, 41, 37, 22 ]
+      },
+      {
+        "name": "ดำเนินการแล้วเสร็จ",
+        "data": [53, 32, 33, 52, 13 ]
+      }
+    
+    ],
+    "categories": ["Marine Sprite", "Striking Calf", "Tank Picture", "Bucket Slope", "Reborn Kid"]
+  }
+  

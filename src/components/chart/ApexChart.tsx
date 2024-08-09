@@ -15,6 +15,9 @@ class ApexChart extends React.Component<ApexChartProps, ApexChartState> {
                     height: 350,
                     type: 'rangeBar'
                 },
+                title: {
+                    text:props.title
+                },
                 plotOptions: {
                     bar: {
                         horizontal: true,
