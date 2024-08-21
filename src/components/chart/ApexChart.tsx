@@ -12,19 +12,18 @@ class ApexChart extends React.Component<ApexChartProps, ApexChartState> {
             series: this.processData(props.data),
             options: {
                 chart: {
-                    height: 350,
+                    height: 450,
                     type: 'rangeBar'
                 },
                 title: {
                     text:props.title
                 },
+                
                 plotOptions: {
                     bar: {
                         horizontal: true,
-                        distributed: true,
-                        dataLabels: {
-                            hideOverflowingLabels: false
-                        }
+                        barHeight: '50%',
+                        rangeBarGroupRows: true
                     }
                 },
                 dataLabels: {
@@ -36,25 +35,25 @@ class ApexChart extends React.Component<ApexChartProps, ApexChartState> {
                         return diff + (diff > 1 ? ' days' : ' day');
                     }
                 },
-                fill: {
-                    type: 'gradient',
-                    gradient: {
-                        shade: 'light',
-                        type: 'vertical',
-                        shadeIntensity: 0.25,
-                        gradientToColors: undefined,
-                        inverseColors: true,
-                        opacityFrom: 1,
-                        opacityTo: 1,
-                        stops: [50, 0, 100, 100],
-                    }
-                },
+                // fill: {
+                //     type: 'gradient',
+                //     gradient: {
+                //         shade: 'light',
+                //         type: 'vertical',
+                //         shadeIntensity: 0.25,
+                //         gradientToColors: undefined,
+                //         inverseColors: true,
+                //         opacityFrom: 1,
+                //         opacityTo: 1,
+                //         stops: [50, 0, 100, 100],
+                //     }
+                // },
                 xaxis: {
                     type: 'datetime'
-                },
-                legend: {
+                  },
+                  legend: {
                     position: 'top'
-                }
+                  }
             }
         };
     }
@@ -111,7 +110,7 @@ class ApexChart extends React.Component<ApexChartProps, ApexChartState> {
         return (
             <div>
                 <div id="chart">
-                    <ReactApexChart options={this.state.options} series={this.state.series} type="rangeBar" height={350} />
+                    <ReactApexChart options={this.state.options} series={this.state.series} type="rangeBar" height={450} />
                 </div>
                 <div id="html-dist"></div>
             </div>

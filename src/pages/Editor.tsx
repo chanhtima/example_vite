@@ -30,7 +30,7 @@ export default function page() {
           setData={setTextCk}
         />
 
-        <div className=' h-[40rem] border my-2 pt-1  overflow-y-auto'>
+        <div className=' h-[40rem] border my-2 pt-1  overflow-y-auto ck-content'>
           <h2 className="text-xl font-bold flex justify-center">Preview Ck5</h2>
           <div dangerouslySetInnerHTML={{ __html: textCk }} className='p-2'></div>
         </div>

@@ -29,7 +29,7 @@ function Chart() {
     } catch (error) {
       console.error('Error fetching :', error);
       setData([]);
-      setDataBar(null);;
+      setDataBar(null);
     }
   }
 
@@ -38,6 +38,7 @@ function Chart() {
   }, [])
 
   const colors = ['#d4526e', '#13d8aa',] // เรียกสีตามลำดับ categories
+  const colors2 = ['#33b2df', '#546E7A',] // เรียกสีตามลำดับ categories
 
   return (
     <>
@@ -72,15 +73,17 @@ function Chart() {
             {dataBar ? (
               <ChartBasicBar
                 series={dataBar.series}
-                enabled // แสดงผลรวม
                 categories={dataBar.categories}
                 title="Fiction Books Sales"
-                colors={colors}
+                colors={colors2}
               />
             ) : (
               <p>Loading data...</p>
             )}
           </div>
+        </TabPanel>
+        <TabPanel header="ApexChart  Area Charts ">
+        
         </TabPanel>
         <TabPanel header="ApexChart  Pie Chart ">
         
