@@ -7,6 +7,7 @@ import Editor from "./pages/Editor";
 import Table from "./pages/Table";
 import Upload from "./pages/Upload";
 import Galleria from "./pages/Galleria";
+import Tracking from "./pages/trackingPages/TrackingIndex";
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
              <Route path="/table" element={<Table/>} />
              <Route path="/upload" element={<Upload/>} />
              <Route path="/galleria" element={<Galleria/>} />
+             <Route path="/tracking" element={<Tracking/>} />
              <Route path="*" element={<Navigate to="/" />} />
           </Route>
        </Routes>

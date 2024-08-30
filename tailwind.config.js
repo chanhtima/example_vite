@@ -15,6 +15,8 @@ export default {
       colors: {
         "sugar-1": "#4C3B28",
         "orange-1":"#CC822C",
+        "green-1":"#13714C",
+        "green-2":"#017978",
       },
     },
   },

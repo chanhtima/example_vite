@@ -186,15 +186,16 @@ export default function TableBasic<T>({
                 tableStyle={{ minWidth: '50rem' }}
             >
                 {selection && selectionType === 'checkbox' && (
-                    <Column selectionMode="multiple" headerStyle={{ width: '3rem' }}></Column>
+                    <Column selectionMode="multiple" headerStyle={{ width: '3rem', backgroundColor: '#017978' ,color: '#fff'}}></Column>
                 )}
                 {selection && selectionType === 'radiobutton' && (
-                    <Column selectionMode="single" headerStyle={{ width: '3rem' }}></Column>
+                    <Column selectionMode="single" headerStyle={{ width: '3rem', backgroundColor: '#017978' ,color: '#fff' }}></Column>
                 )}
                 <Column
                     body={(_rowData, { rowIndex }: { rowIndex: number }) => rowIndex + 1}
                     header="ลำดับ"
                     style={{ width: '3rem' }}
+                    headerStyle={{ backgroundColor: '#017978', color: '#fff' }}
                 />
                 {columns.map((col, index) => (
                     <Column
@@ -204,6 +205,8 @@ export default function TableBasic<T>({
                         className={col.className}
                         sortable={col.sortable}
                         body={col.render}
+                        headerStyle={{ backgroundColor: '#017978', color: '#fff' }}
+
                     />
                 ))}
             </DataTable>

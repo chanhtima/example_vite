@@ -36,6 +36,11 @@ export const items: MenuItem[] = [
     url: "galleria",
   },
   {
+    label: "Tracking",
+    icon: "pi pi-fw pi-images",
+    url: "tracking",
+  },
+  {
     label: "Settings",
     icon: "pi pi-fw pi-cog",
     items: [
